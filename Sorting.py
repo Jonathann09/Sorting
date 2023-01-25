@@ -38,3 +38,20 @@ print("===========================")
 
 #INSERTION SORT
 
+def Insertionsort(array):
+     print(array)
+     #Traverse through 1 to Len(array)
+     for a in range(1, len(array)):
+        b = a
+        while b > 0 and array[b] < array[b -1]:
+            array[b - 1], array[b] = array[b], array[b-1] 
+            b -= 1
+            print(array)
+                
+#Driver code
+array = [24, 71, 8, 1, 16, 56, 68, 18, 19, 53]
+Insertionsort(array)
+
+
+
+
