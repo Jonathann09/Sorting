@@ -162,18 +162,3 @@ print("array =", array)
 quickSort(array, 0, len(array) -1)
        
 
-
-   def selection_sort(arr):
-        size = len (arr)
-    for i in range (size-1):
-       min_index = i
-       for j in range (min_index+1, size):
-           if arr[j] < arr[min_index]:
-                min_index = j
-        
-       if i  != min_index:
-             arr[i], arr[min_index] = arr[min_index], arr[i]
-if __name__ == '__main__':
-    array = [24, 71, 8, 1, 16, 56, 68, 18, 19, 53]
-    selection_sort(array)
-    print(array)
