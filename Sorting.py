@@ -1,9 +1,14 @@
 print("Urrete, Jonathan U.")
 print("BSCOE 2-2")
+
+
+
+print("================== ")
+print("    BUBBLE SORT    ")
 print("===================")
-print()
 
 #BUBBLE SORT
+
 
 def bubbleSort(arr):
       
@@ -26,3 +31,10 @@ bubbleSort(elements)
 
 print('Sorted Array:')
 print(elements)
+
+print("===========================")
+print("     INSERTION SORT        ")
+print("===========================")
+
+#INSERTION SORT
+
