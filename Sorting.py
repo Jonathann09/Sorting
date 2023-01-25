@@ -1,6 +1,32 @@
 print("Urrete, Jonathan U.")
 print("BSCOE 2-2")
 
+print("================== ")
+print("  SELECTION SORT   ")
+print("===================")
+
+#SELECTION SORT
+
+def sort(nums):
+    
+    for i in range(5):
+        minpos = i
+        for j in range(i,6):
+            if nums[j] < nums[minpos]:
+                minpos = j
+
+
+        temp = nums[i]
+        nums[i] = nums[minpos]
+        nums[minpos] = temp
+
+        print(nums)
+
+
+array = [24, 71, 8, 1, 16, 56, 68, 18, 19, 53] 
+sort(array)
+print(array)
+
 
 
 print("================== ")
@@ -137,4 +163,17 @@ quickSort(array, 0, len(array) -1)
        
 
 
-   
+   def selection_sort(arr):
+        size = len (arr)
+    for i in range (size-1):
+       min_index = i
+       for j in range (min_index+1, size):
+           if arr[j] < arr[min_index]:
+                min_index = j
+        
+       if i  != min_index:
+             arr[i], arr[min_index] = arr[min_index], arr[i]
+if __name__ == '__main__':
+    array = [24, 71, 8, 1, 16, 56, 68, 18, 19, 53]
+    selection_sort(array)
+    print(array)
