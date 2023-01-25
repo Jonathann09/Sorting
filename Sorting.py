@@ -25,12 +25,12 @@ def bubbleSort(arr):
                 arr[j], arr[j+1] = arr[j+1], arr[j]
                 print(arr)
 
-elements = [24, 71, 8, 1, 16, 56, 68, 18, 19, 53]
+array = [24, 71, 8, 1, 16, 56, 68, 18, 19, 53]
 
-bubbleSort(elements)
+bubbleSort(array)
 
 print('Sorted Array:')
-print(elements)
+print(array)
 
 print("===========================")
 print("     INSERTION SORT        ")
@@ -59,11 +59,11 @@ print("===========================")
 
 #MERGE SORT
 
-def mergeSort(myList):
-    if len(myList) > 1:
-            mid = len(myList) // 2
-            left = myList[:mid]
-            right = myList[mid:]
+def mergeSort(array):
+    if len(array) > 1:
+            mid = len(array) // 2
+            left = array[:mid]
+            right = array[mid:]
             print("left: ", left, "right: ", right )
             #recursive call on each half
             mergeSort(left)
@@ -76,23 +76,23 @@ def mergeSort(myList):
     
             while i < len(left) and j < len(right):
               if left[i] <= right[j]:
-               myList[k] = left[j]
+               array[k] = left[j]
               i += 1
             else:
-             myList[k] = right[j]
+             array[k] = right[j]
              j += 1
              k += 1
             while i < len(left):
-              myList[k] = left[1]
+              array[k] = left[1]
               i + 1
               k += 1        
             while j < len(right):
-              myList[k]=right[j]
+              array[k]=right[j]
               j += 1
               k += 1
-              print(myList)
-mylist = [24, 71, 8, 1, 16, 56, 68, 18, 19, 53] 
-mergeSort(mylist)
+              print(array)
+array = [24, 71, 8, 1, 16, 56, 68, 18, 19, 53] 
+mergeSort(array)
    
    
 
@@ -131,9 +131,9 @@ def partition(arr, left, right):
            arr[i], arr[right] = arr[right], arr[i]
            print(arr)
     return i
-data = [24, 71, 8, 1, 16, 56, 68, 18, 19, 53] 
-print(data)
-quickSort(data, 0, len(data) -1)
+array = [24, 71, 8, 1, 16, 56, 68, 18, 19, 53] 
+print("array =", array)
+quickSort(array, 0, len(array) -1)
        
 
 
